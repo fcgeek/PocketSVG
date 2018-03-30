@@ -28,14 +28,14 @@ FOUNDATION_EXTERN void SVGDrawPathsWithBlock(NSArray<SVGBezierPath*> * const pat
 
 
 /*!
- * @brief A set of paths and their attributes.
+ *  @discussion A set of paths and their attributes.
  *
  */
 @property(nonatomic, readonly) NSDictionary<NSString*, id> *svgAttributes;
 
 
 /*!
- * @brief The string representation of an SVG.
+ *  @discussion The string representation of an SVG.
  *
  */
 @property(nonatomic, readonly) NSString *SVGRepresentation;
@@ -43,27 +43,20 @@ FOUNDATION_EXTERN void SVGDrawPathsWithBlock(NSArray<SVGBezierPath*> * const pat
 
 
 /*!
- * @brief Returns an array of SVGBezierPaths given an SVG's URL.
+ *  Returns an array of SVGBezierPaths given an SVG's URL.
  *
- * @param aURL The URL from which to load an SVG.
+ *  @param aURL The URL from which to load an SVG.
  *
  */
 + (NSArray<SVGBezierPath*> *)pathsFromSVGAtURL:(NSURL *)aURL;
 
 
 /*!
- * @brief Returns an array of paths given the XML string of an SVG.
+ *  Returns an array of paths given the XML string of an SVG.
  *
  */
 + (NSArray *)pathsFromSVGString:(NSString *)svgString;
 
-/*!
- * @brief Returns a new path with the values of `attributes` added to `svgAttributes`
- *
- * @param attributes A dictionary of SVG attributes to set.
- *
- */
-- (SVGBezierPath *)pathBySettingSVGAttributes:(NSDictionary *)attributes;
 
 #if !TARGET_OS_IPHONE
 @property(nonatomic, readonly) CGPathRef CGPath;

@@ -22,22 +22,16 @@ Thoroughly documented.
 
 ### Cocoapods
 
-Add this to your Podfile:
-
-```
-pod 'PocketSVG', '~> 2.0'
-```
-
-Then run `pod install`
+Add `pod PocketSVG` to your Podfile.
 
 ### Carthage
 
 Add this to your Cartfile:
 ```
-github "pocketsvg/PocketSVG" ~> 2.0
+github "pocketsvg/PocketSVG"
 ```
 
-Then run `carthage update`
+Then run `carthage update`.
 
 ### Manual
 
